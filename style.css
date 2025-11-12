@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+     font-family: sans-serif;
+     transition: 0.3s all;
+}
+:root{
+    /* red color */
+    --primary-color: #E7272D;
+}
+/* navbar styling started */
+nav{
+    width: 90%;
+    margin: 0 auto
+    ;
+    height: 100px;
+    background-color: rgb(172, 172, 172);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.pages{
+    display: flex;
+    gap: 25px;
+}
+.pages a{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-weight: 600;
+}
+.pages a:hover{
+    color: var(--primary-color);
+    cursor: pointer;
+
+}
+.buttons-part{
+    display: flex;
+    gap: 10px;
+}
+.cart{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.reservation{
+    background-color: var(--primary-color);
+    border: none;
+    width: 150px;
+    border-radius: 25px;
+    color: white;
+    font-weight: bolder;
+    font-size: 15px;
+}
+.reservation:hover{
+cursor: pointer;
+background-color: black;
+transition: 0.3s all;
+}
+/* navbar styling ended */
