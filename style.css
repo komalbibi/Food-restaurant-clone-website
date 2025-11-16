@@ -1,3 +1,5 @@
+ @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cinzel:wght@400;700&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -93,23 +95,29 @@ nav {
 /* bg end */
 /* about us start */
 .aboutus{
-    margin: 10px 0px;
+  
     width: 100%;
+    height: 800px;
+    margin-top: 180px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+.about-intro{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+}
 .about{
     display: flex;
     gap: 10px;
     color: var(--primary-color);
-    margin-top: 60px;
+    /* margin: 40px 0px; */
 }
-.contentInAbout{
-    /* width: 500px;
-    height: 120px; */
-}
+
 .h-one{
     font-size: 50px;
     font-weight:600;
@@ -117,7 +125,7 @@ nav {
 }
 .about-four-style{
     width: 90%;
-    height: 1000px;
+    height: 800px;
    margin: 40px auto;
 
 }
@@ -128,6 +136,14 @@ nav {
     float: left;
     display: flex;
     gap: 20px;
+    position: relative;
+}
+.veges{
+  position: absolute;
+ margin-top: 45%;
+ margin-right: 10px;
+ overflow: hidden;
+ z-index: -1;
 }
 .firstimage{
     width: 330px;
@@ -198,12 +214,20 @@ color: white;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    position: relative;
 }
 .food2{
     border-right: 1px solid gainsboro;
     border-top: 0px solid;
     border-left: 0px;
     margin-top: -10px;
+
+}
+.tomatopic{
+  position: absolute;
+  margin-left: 25%;
+  margin-top: 20%;
+  z-index: -1;
 }
 
 /* about us end */
@@ -214,8 +238,7 @@ height: 1000px;
 background-color: gainsboro;
 display: flex;
 flex-direction: column;
-/* justify-content: center; */
-align-items: center ;
+align-items: center;
 }
 .specialBurger{
     width: 540px;
@@ -225,12 +248,13 @@ align-items: center ;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    margin-top: 30px;
+    margin: 40px 0px;
+  
 }
 .productsList{
     width: 100%;
     height: 700px;
-    margin-top: 80px;
+    margin-top: 90px;
     display: flex;
     gap: 20px;
     justify-content: space-around;
@@ -256,7 +280,7 @@ align-items: center ;
     object-fit:contain;
   }
 
-  /* Title with serif style and line break like image */
+ 
   .title{
     font-family: "Playfair Display", serif;
     font-size:40px;
@@ -373,16 +397,20 @@ align-items: center ;
   /* remove bottom border for last item in each column */
   .menu-list li:last-child{ border-bottom: none; }
 
-  .thumb{
+  .pics{
     width:86px;
     height:86px;
     object-fit:cover;
     border-radius:12px;
     box-shadow: 0 6px 18px rgba(0,0,0,0.06);
-    background:#fff;
+    /* background:#fff; */
     flex-shrink:0;
   }
-  .thumb.round{ border-radius:50%; width:86px;height:86px; }
+  .pics.round{ 
+    border-radius:50%; 
+    width:86px;
+    height:86px; 
+  }
 
   .meta{ min-width:0; } /* allow text truncation */
 
@@ -523,3 +551,347 @@ display: block;
 font-size: 22px;
 font-weight: 700;
 }
+/* opening hour end */
+/* deals section styling start */
+.deal-section{
+background-image: url(./images/6.jpg_1.jpeg);
+background-position: center;
+background-size: cover;
+padding: 80px 6%;
+color: #fff;
+position: relative;
+overflow: hidden;
+font-family: "Helvetica Neue", Arial, sans-serif;
+width: 100%;
+height: 800px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+/* Container layout */
+.deal-inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Left column */
+.deal-left{
+  flex: 1 1 55%;
+  max-width: 55%;
+  margin-top: 20px;
+}
+
+.small-label{
+  font-family: 'Great Vibes', cursive;
+  font-size: 28px;
+  color: #f7f7f7;
+  margin-bottom: 10px;
+  opacity: 0.95;
+}
+
+.deal-title{
+  font-family: 'Marcellus', 'cursive';
+  font-size: 70px;         
+  line-height: 0.95;
+  margin: 10px 0 24px;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+/* Description text */
+.deal-desc{
+  color: #e7e7e7;
+  max-width: 520px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+/* CTA */
+.cta-btn{
+  display: inline-block;
+  background: #e83b3b; /* red CTA */
+  color: #fff;
+  padding: 14px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 6px 20px rgba(232,59,59,0.24);
+}
+
+/* Right column */
+.deal-right{
+  flex: 1 1 40%;
+  max-width: 40%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+/* circle mask and positioning */
+.image-wrap{
+  position: relative;
+  width: 420px;
+  height: 420px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+
+.hero-image{
+  width: 420px;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid gray;
+  box-shadow: inset 0 0 0 8px rgba(0,0,0,0.45), 0 14px 40px rgba(0,0,0,0.6);
+  display:block;
+}
+
+/* PRICE BADGE (the red hex-like badge) */
+/* This is where the red background for the price is set: .price-badge { background: #e83030; } */
+.price-badge{
+  position: absolute;
+  top: -30px;
+  
+  right: 250px;
+  width: 170px;
+  height: 170px;
+  background: #e83030; /* <-- RED BACKGROUND for price badge */
+clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+ display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+  font-weight:700;
+  box-shadow: 0 8px 24px rgba(232,51,51,0.25);
+  transform: rotate(-6deg);
+  
+}
+
+/* price text styles */
+.price-badge .old{
+  text-decoration: line-through;
+  font-size: 18px;
+  opacity: 0.9;
+  margin-bottom: 6px;
+  color: rgba(255,255,255,0.85);
+}
+
+.price-badge .new{
+  font-size: 32px;
+  font-weight: 900;
+}
+
+/* small round plate at lower-right of hero */
+.small-plate{
+  position: absolute;
+  right: -110px;
+  bottom: -60px;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  background: url('./images/13_1.png') center/cover no-repeat; 
+  box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+  border: 6px solid rgba(255,255,255,0.06);
+  transform: translate(40px, 20px) scale(0.6);
+}
+
+/* deals section styling end */
+/* feedback section styling start */
+.main-testimonial-section{
+background-position: center;
+background-size: cover;
+padding: 80px 6%;
+background-color:  #EBE9E6;
+position: relative;
+overflow: hidden;
+font-family: "Helvetica Neue", Arial, sans-serif;
+width: 100%;
+height: 800px;
+
+}
+.startsection{
+display: flex;
+gap: 30px;
+justify-content: center;
+
+}
+.burgerpic{
+
+  margin-top: 80px;
+  position: absolute;
+margin-right:70%;
+}
+.wrapper{
+  margin-top: 40px;
+  width: 90%;
+  margin: 10px auto;
+  height: auto;
+  display: flex;
+  gap: 100px;
+
+}
+/* .imgside{
+  width: 400px;
+  height: 400px;
+  border-radius: 10px;
+  background-color: black;
+  background-image: url(./images/4.jpg.jpeg);
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  margin-top: 20px;
+  margin-left: -40px;
+  background-color: black;
+  position: relative;
+}
+.img1{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-image: url(./images/5.jpg.jpeg);
+  background-position: center;
+  background-size: cover;
+ 
+  position: absolute;
+  bottom: 60%;
+  left: 70%;
+  border: 2px solid white;
+  z-index: 111;
+}
+.img2{
+    width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-image: url(./images/6.jpg.jpeg);
+  background-position: center;
+  background-size: cover;
+  z-index: 1111;
+  position: absolute;
+  bottom: 30%;
+  left: 40%;
+border: 6px solid white;
+}
+.img3{
+    width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-image: url(./images/7.jpg.jpeg);
+  background-position: center;
+  background-size: cover;
+  z-index: 1111;
+  position: absolute;
+  bottom: 13%;
+  left: 37%;
+  border: 2px solid white;
+} */
+ /* Parent wrapper controlling everything */
+.imgside-wrapper {
+    position: relative;
+    width: 420px;
+    height: 430px;
+}
+
+
+/* HEXAGON IMAGE */
+.imgside{
+  width: 400px;
+  height: 400px;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  background-image: url(./images/4.jpg.jpeg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  overflow: hidden;  /* only clips the main image */
+}
+
+
+/* CIRCLE IMAGES – OUTSIDE HEXAGON */
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  border: 6px solid white;
+  box-shadow: 0px 5px 25px rgba(0,0,0,0.18);
+}
+
+
+.circle1 {
+  width: 95px;
+  height: 95px;
+  background-image: url(./images/5.jpg.jpeg);
+  top: 20px;
+  right: -5px;
+  border: 2px solid white;
+}
+
+.circle2 {
+  width: 115px;
+  height: 115px;
+  background-image: url(./images/6.jpg.jpeg);
+  top: 160px;
+  right: -55px;
+}
+
+.circle3 {
+  width: 95px;
+  height: 95px;
+  background-image: url(./images/7.jpg.jpeg);
+  bottom: 40px;
+  left: 270px;
+  border: 2px solid white;
+}
+
+.feedback-text {
+    max-width: 520px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   
+    position: relative;
+}
+.rating{
+  background-color: transparent;
+  margin-right: 70%;
+}
+.rating span {
+    font-size: 14px;
+    margin-left: 5px;
+    color: #555;
+    background-color: transparent !important;
+}
+
+.feedback-title {
+    margin: 12px 0 20px;
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.feedback-desc {
+    font-size: 27px;
+    color: #555;
+    line-height: 1.7;
+}
+
+.client-name {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.client-role {
+    color: #e63939;
+    font-size: 13px;
+    margin-top: 3px;
+}
+
+
+/* feedback section styling end */
